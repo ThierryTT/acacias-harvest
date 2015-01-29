@@ -8,15 +8,30 @@
       <tr>
         <th>Utilisateur</th>
         <th>Nom forêt</th>
+        <th>Village</th>
+        <th>Gouvernorat</th>
+        <th>Fermiers</th>
+        <th>Femmes bénéficiaires</th>
+        <th>Arbres plantés</th>
+        <th>Surfaces</th>
+        <th>Arbres morts</th>
         <th>Commentaire</th>
-        <th>Actions</th>
       </tr>
     </thead>
+
+
     <tbody>
       <% @reports.each do |report| %>
         <tr>
           <td><%= report.user_name %></td>
           <td><%= report.forest_name %></td>
+          <td><%= report.village %></td>
+          <td><%= report.governorate %></td>
+          <td><%= report.farmers_visited %></td>
+          <td><%= report.women_beneficiaries %></td>
+          <td><%= report.trees_planted %></td>
+          <td><%= report.visited_area %></td>
+          <td><%= report.trees_in_poor_condition %></td>
           <td><%= report.observation %></td>
           <td><%= image_tag report.forest_photo %></td>
           <td>

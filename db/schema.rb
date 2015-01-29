@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209134910) do
+ActiveRecord::Schema.define(version: 20150129120721) do
 
   create_table "reports", force: true do |t|
     t.string   "forest_name"
@@ -20,6 +20,14 @@ ActiveRecord::Schema.define(version: 20141209134910) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "forest_photo"
+    t.string   "village"
+    t.string   "governorate"
+    t.decimal  "farmers_visited"
+    t.decimal  "women_beneficiaries"
+    t.decimal  "trees_planted"
+    t.decimal  "visited_area"
+    t.decimal  "trees_in_poor_condition"
+    t.text     "name_of_farmers_met"
   end
 
 end

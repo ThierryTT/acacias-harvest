@@ -5,11 +5,34 @@
   <%= form_for @report do |r| %>
 
     <%= r.label :user_name, t(".user_name") %><br>
-    <%= r.text_field(:user_name, class: 'input-report') %><br>
-
+    <%= r.text_field(:user_name, class: 'input-report') %><br><br>
 
     <%= r.label :forest_name, t(".forest_name") %><br>
-    <%= r.text_field :forest_name, class: 'input-report' %><br>
+    <%= r.text_field :forest_name, class: 'input-report' %><br><br>
+
+    <%= r.label :village, t(".village") %><br>
+    <%= r.text_field :village, class: 'input-report' %><br><br>
+
+    <%= r.label :governorate, t(".governorate") %><br>
+    <%= r.text_field :governorate, class: 'input-report' %><br><br>
+
+    <%= r.label :farmers_visited, t(".farmers_visited") %><br>
+    <%= r.text_field :farmers_visited, class: 'input-report' %><br><br>
+
+    <%= r.label :women_beneficiaries, t(".women_beneficiaries") %><br>
+    <%= r.text_field :women_beneficiaries, class: 'input-report' %><br><br>
+
+    <%= r.label :trees_planted, t(".trees_planted") %><br>
+    <%= r.text_field :trees_planted, class: 'input-report' %><br><br>
+
+    <%= r.label :visited_area, t(".visited_area") %><br>
+    <%= r.text_field :visited_area, class: 'input-report' %><br><br>
+
+    <%= r.label :trees_in_poor_condition, t(".trees_in_poor_condition") %><br>
+    <%= r.text_field :trees_in_poor_condition, class: 'input-report' %><br><br>
+
+    <%= r.label :name_of_farmers_met, t(".name_of_farmers_met") %><br>
+    <%= r.text_area :name_of_farmers_met, class: 'input-report' %><br>
 
     <%= r.label :observation, t(".observation") %><br>
     <%= r.text_area :observation, class: 'input-report' %><br>
