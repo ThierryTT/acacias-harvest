@@ -29,6 +29,13 @@
     <%= r.label :trees_in_poor_condition, t(".trees_in_poor_condition") %><br>
     <%= r.text_field :trees_in_poor_condition, class: 'input-report' %><br>
 
+    <%= r.label :farmers_problems, t(".farmers_problems") %><br>
+    <%= r.text_field :farmers_problems, class: 'input-report' %><br>
+      <select name="select">
+      <option>Oui</option>
+      <option>Non</option>
+      </select><br><br>
+
     <%= r.label :name_of_farmers_met, t(".name_of_farmers_met") %><br>
     <%= r.text_area :name_of_farmers_met, class: 'input-report' %><br>
 
